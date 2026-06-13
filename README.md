@@ -1,162 +1,159 @@
-\# 🧠 AI-Powered Bilingual Mental Wellness Chatbot
+# AI-Powered Bilingual Mental Wellness Chatbot
 
+## Overview
 
+This project is an AI-powered mental wellness chatbot designed to provide supportive conversations in both Sinhala and English. The system combines emotion recognition, risk assessment, machine translation, and a fine-tuned Large Language Model (LLM) to deliver context-aware and empathetic responses while maintaining user safety.
 
-A bilingual AI mental wellness platform supporting Sinhala and English users through emotion recognition, risk assessment, and a fine-tuned Qwen2.5 language model.
+The solution was developed as a final-year academic project and demonstrates the integration of Artificial Intelligence, Natural Language Processing, Machine Learning, and Full-Stack Software Engineering.
 
+---
 
+## Key Features
 
-\---
+* Sinhala and English conversational support
+* Automatic language detection
+* Google Translate integration for Sinhala ↔ English translation
+* Emotion recognition using transformer-based NLP models
+* Risk assessment for crisis-related conversations
+* Fine-tuned Qwen2.5-based local LLM using Ollama
+* FastAPI backend architecture
+* React + TypeScript frontend
+* Session management and conversation tracking
+* Privacy-aware design with optional text storage
+* Mental wellness focused response generation
 
+---
 
+## Technology Stack
 
-\## 📖 Overview
+### Frontend
 
+* React
+* TypeScript
+* Vite
+* CSS
 
+### Backend
 
-The Mental Wellness Chatbot is an AI-powered support system designed to provide empathetic conversations for users experiencing emotional distress. The system combines machine learning, natural language processing, translation services, and a fine-tuned large language model to deliver safe and context-aware responses.
+* FastAPI
+* Python
+* SQLAlchemy
+* SQLite
 
+### Artificial Intelligence
 
+* Qwen2.5-7B-Instruct
+* QLoRA Fine-Tuning
+* Ollama
+* Hugging Face Transformers
+* GoEmotions Emotion Classification
 
-\---
+### Translation
 
+* Google Cloud Translation API
 
+---
 
-\## ✨ Key Features
+## System Architecture
 
+User → React Frontend → FastAPI Backend → Translation Layer → Emotion Detection → Risk Assessment → Fine-Tuned Qwen2.5 Model (Ollama) → Response Generation → Frontend
 
+---
 
-\- \*\*Bilingual Conversations\*\* – Sinhala and English support.
+## Project Structure
 
-\- \*\*Automatic Language Detection\*\* – Detects user language automatically.
+```text
+backend/
+frontend/
+training/
+docs/
+README.md
+```
 
-\- \*\*Emotion Recognition\*\* – Identifies emotional states using NLP models.
+---
 
-\- \*\*Risk Assessment\*\* – Detects potential crisis situations.
-
-\- \*\*AI Response Generation\*\* – Powered by a fine-tuned Qwen2.5 model.
-
-\- \*\*Google Translation Integration\*\* – Accurate Sinhala ↔ English translation.
-
-\- \*\*Session Management\*\* – Maintains conversation history.
-
-\- \*\*Privacy-Aware Design\*\* – Optional user text storage.
-
-
-
-\---
-
-
-
-\## 🏗️ System Architecture
-
-
-
-User
-
-↓
-
-React Frontend
-
-↓
-
-FastAPI Backend
-
-↓
-
-Translation Layer
-
-↓
-
-Emotion Detection
-
-↓
-
-Risk Assessment
-
-↓
-
-Fine-Tuned Qwen2.5 (Ollama)
-
-↓
-
-Response Generation
-
-
-
-\---
-
-
-
-\## 💻 Technology Stack
-
-
-
-\### Frontend
-
-
-
-\- React
-
-\- TypeScript
-
-\- Vite
-
-
-
-\### Backend
-
-
-
-\- FastAPI
-
-\- Python
-
-\- SQLAlchemy
-
-\- SQLite
-
-
-
-\### Artificial Intelligence
-
-
-
-\- Qwen2.5-7B-Instruct
-
-\- QLoRA Fine-Tuning
-
-\- Ollama
-
-\- Hugging Face Transformers
-
-
-
-\### Translation
-
-
-
-\- Google Cloud Translation API
-
-
-
-\---
-
-
-
-\## 🚀 Installation
-
-
-
-\### Backend
-
-
+## Running the Backend
 
 ```bash
-
 cd backend
-
 pip install -r requirements.txt
-
 python main.py
+```
 
+Backend:
+
+```text
+http://127.0.0.1:8000
+```
+
+Swagger Documentation:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+---
+
+## Running the Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## Fine-Tuned Model
+
+Base Model:
+
+```text
+Qwen2.5-7B-Instruct
+```
+
+Fine-Tuning Method:
+
+```text
+QLoRA
+```
+
+Deployment:
+
+```text
+Ollama
+```
+
+The final GGUF model is stored separately due to GitHub file size limitations.
+
+---
+
+## Safety Notice
+
+This application is intended to provide emotional support and wellness-oriented conversation. It is not a substitute for professional mental health services, medical advice, diagnosis, or treatment.
+
+For high-risk situations, users should seek immediate assistance from qualified professionals and emergency services.
+
+---
+
+## Author
+
+Lakindu Pehesara
+
+BSc (Hons) Data Science
+
+Plymouth University
+
+United Kingdom
+
+---
+
+## Academic Purpose
+
+This repository was developed as part of a final-year undergraduate research and development project focused on AI-assisted mental wellness support systems.
