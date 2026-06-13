@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: theme(fontFamily.sans);
+  background: #070B14;
+  color: #E5E7EB;
+}
+
+* {
+  box-sizing: border-box;
+}
